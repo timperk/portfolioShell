@@ -21,8 +21,8 @@ gulp.task('styles', function() {
 // Watch for changes in scss files
 // Watch for errors in js file
 gulp.task('watch', function() {
-    gulp.watch('src/scss/**/*.scss', ['styles']);
-    gulp.watch('src/js/*.js', ['jshint', 'compress']);
+    gulp.watch('src/scss/**/*.scss', gulp.series('styles'));
+    gulp.watch('src/js/*.js', gulp.series('jshint', 'compress'));
 });
 
 // Catch JS errors
@@ -47,5 +47,6 @@ gulp.task('minify-css', function() {
     .pipe(gulp.dest('css'));
 });
 
-// All tasks together
-gulp.task('default', ['styles','compress', 'jshint', 'watch']);
+gulp.task('default', gulp.series(gulp.parallel('styles','compress', 'jshint', 'watch'), function a () {
+  // do something
+}))
