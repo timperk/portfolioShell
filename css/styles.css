@@ -278,6 +278,17 @@ h1 {
   height: 100%;
   z-index: 1;
   opacity: 0.5; }
+  .bcg video {
+    background-position: center;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 50% 50%;
+    object-position: 50% 50%;
+    filter: blur(0);
+    height: 100%;
+    transition: filter .35s ease-in-out;
+    transition: filter .35s ease-in-out;
+    width: 100%; }
   .header-container .bcg {
     background-image: url(../img/bg-2.jpg);
     background-size: cover; }
@@ -289,36 +300,28 @@ h1 {
     background-size: cover; }
   #slide03 .bcg {
     background: url(../img/bg-5.jpg) no-repeat center center;
-    background-size: cover;
-    opacity: 0.7; }
+    background-size: cover; }
   #slide04 .bcg {
     background: url(../img/bg-6.jpg) no-repeat center center;
-    background-size: cover;
-    opacity: 0.7; }
+    background-size: cover; }
   #slide05 .bcg {
     background: url(../img/bg-7.jpg) no-repeat center center;
-    background-size: cover;
-    opacity: 0.7; }
+    background-size: cover; }
   #slide06 .bcg {
     background: url(../img/bg-8.jpg) no-repeat center center;
-    background-size: cover;
-    opacity: 0.7; }
+    background-size: cover; }
   #slide07 .bcg {
-    background: url(../img/bg-intro_b.jpg) no-repeat center center;
-    background-size: cover;
-    opacity: 0.7; }
-  #slide08 .bcg {
     background: url(../img/bg-intro-alt.jpg) no-repeat center center;
-    background-size: cover;
-    opacity: 0.7; }
+    background-size: cover; }
+  #slide08 .bcg {
+    background: url(../img/bg-intro_b.jpg) no-repeat center center;
+    background-size: cover; }
   #slide09 .bcg {
-    background: url(../img/img_mountains04.jpg) no-repeat center center;
-    background-size: cover;
-    opacity: 0.7; }
+    background: url(../img/bg-5.jpg) no-repeat center center;
+    background-size: cover; }
   #slide10 .bcg {
-    background: url(../img/img_mountains04.jpg) no-repeat center center;
-    background-size: cover;
-    opacity: 0.7; }
+    background: url(../img/bg-5.jpg) no-repeat center center;
+    background-size: cover; }
 
 /* =Navigation */
 nav {
@@ -417,8 +420,6 @@ p {
       color: #ffffff; }
   .slide#slide03 .wrapper {
     padding-top: 100px; }
-  .slide#slide04 {
-    background-color: #be4c2c; }
 
 .button {
   text-decoration: none;
