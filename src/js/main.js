@@ -172,6 +172,7 @@
         })
         .setTween(TweenMax.to($("#slide01"), 0.2, {scale: 0.85, autoAlpha:0.35, ease:Power1.easeOut}, '-=0.2'))
         .on("enter", function (event) {
+          $('#slide01 iframe').attr('src', 'https://player.vimeo.com/video/272634066?autoplay=1&loop=1&autopause=0&background=1');
 			    $('nav').attr('class','is-light');
 			})
         .addTo(controller);
@@ -227,6 +228,33 @@
             duration: "100%"
         })
         .setTween(TweenMax.from($("#slide07"), 0.2, {opacity: 0.4, ease:Power1.easeOut}, '-=0.1'))
+        //.setPin("#slide07", {pushFollowers: true})
+        .addTo(controller);
+
+        var sectionSeven = new ScrollMagic.Scene({
+            triggerElement: '#slide08',
+            triggerHook: 1,
+            duration: "100%"
+        })
+        .setTween(TweenMax.from($("#slide08"), 0.2, {opacity: 0.4, ease:Power1.easeOut}, '-=0.1'))
+        //.setPin("#slide07", {pushFollowers: true})
+        .addTo(controller);
+
+        var sectionSeven = new ScrollMagic.Scene({
+            triggerElement: '#slide09',
+            triggerHook: 1,
+            duration: "100%"
+        })
+        .setTween(TweenMax.from($("#slide09"), 0.2, {opacity: 0.4, ease:Power1.easeOut}, '-=0.1'))
+        //.setPin("#slide07", {pushFollowers: true})
+        .addTo(controller);
+
+        var sectionSeven = new ScrollMagic.Scene({
+            triggerElement: '#slide10',
+            triggerHook: 1,
+            duration: "100%"
+        })
+        .setTween(TweenMax.from($("#slide10"), 0.2, {opacity: 0.4, ease:Power1.easeOut}, '-=0.1'))
         //.setPin("#slide07", {pushFollowers: true})
         .addTo(controller);
 
