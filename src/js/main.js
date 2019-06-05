@@ -1,7 +1,7 @@
 (function ($) {
 
 	// Init ScrollMagic
-    var controller = new ScrollMagic.Controller();
+  var controller = new ScrollMagic.Controller();
 
     // get all slides
 	var slides = ["#slide01", "#slide02", "#slide03", "#slide04", "#slide05", "#slide06", "#slide07", "#slide08", "#slide09", "#slide10"];
@@ -19,8 +19,9 @@
 
 	$('.bcg').imagesLoaded({
 	    background: true
-	  }
-	).progress( function( instance, image ) {
+	})
+
+  .progress( function( instance, image ) {
 		loadProgress();
 	});
 
@@ -172,7 +173,7 @@
         })
         .setTween(TweenMax.to($("#slide01"), 0.2, {scale: 0.85, autoAlpha:0.35, ease:Power1.easeOut}, '-=0.2'))
         .on("enter", function (event) {
-          $('#slide01 iframe').attr('src', 'https://player.vimeo.com/video/272634066?autoplay=1&loop=1&autopause=0&background=1');
+          //$('#slide01 iframe').attr('src', 'https://player.vimeo.com/video/272634066?autoplay=1&loop=1&autopause=0&background=1');
 			    $('nav').attr('class','is-light');
 			})
         .addTo(controller);
@@ -231,7 +232,7 @@
         //.setPin("#slide07", {pushFollowers: true})
         .addTo(controller);
 
-        var sectionSeven = new ScrollMagic.Scene({
+        var sectionEight = new ScrollMagic.Scene({
             triggerElement: '#slide08',
             triggerHook: 1,
             duration: "100%"
@@ -240,7 +241,7 @@
         //.setPin("#slide07", {pushFollowers: true})
         .addTo(controller);
 
-        var sectionSeven = new ScrollMagic.Scene({
+        var sectionNine = new ScrollMagic.Scene({
             triggerElement: '#slide09',
             triggerHook: 1,
             duration: "100%"
@@ -249,7 +250,7 @@
         //.setPin("#slide07", {pushFollowers: true})
         .addTo(controller);
 
-        var sectionSeven = new ScrollMagic.Scene({
+        var sectionTen = new ScrollMagic.Scene({
             triggerElement: '#slide10',
             triggerHook: 1,
             duration: "100%"
@@ -276,7 +277,7 @@
 	    .setTween(introTl)
 	    .addTo(controller);
 
-	    // change behaviour of controller to animate scroll instead of jump
+	  // change behaviour of controller to animate scroll instead of jump
 		controller.scrollTo(function (newpos) {
 			TweenMax.to(window, 1, {scrollTo: {y: newpos}, ease:Power0.easeInOut});
 		});

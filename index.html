@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="css/styles.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://player.vimeo.com/api/player.js"></script>
     </head>
     <body class="is-loading">
         <a name="top" id="top"></a>
@@ -39,13 +40,26 @@
             <div class="bcg">
               <div class="video-overlay"></div>
               <div class="video-wrapper">
-                <iframe frameborder="0" height="100%" width="100%" src="https://player.vimeo.com/video/272634066?autoplay=1&loop=1&autopause=0&background=1">
-                </iframe>
+                <div id="myVideo"></div>
+                <script src="{url}"></script>
+                  <script>
+                    var options = {
+                      url: "https://vimeo.com/331453694",
+                      width: 800,
+                      background: true
+                    };
+
+                    var videoPlayer = new Vimeo.Player('myVideo', options);
+
+                    videoPlayer.on('play', function() {
+                      console.log('Played the video');
+                    });
+                  </script>
               </div>
             </div>
             <header class="wrapper">
-                <h2>EVAN <strong>SWINEHART</strong></h2>
-                <h1 class="title">Videographer</h1>
+                <h1>EVAN <strong>SWINEHART</strong></h1>
+                <h2 class="title">Videographer</h2>
             </header>
             <a href="#slide01" class="scroll-hint"><span>View Work</span></a>
         </div>
@@ -71,13 +85,13 @@
                 <div class="bcg">
                   <div class="video-overlay"></div>
                   <div class="video-wrapper">
-                    <iframe frameborder="0" height="100%" width="100%" src="">
+                    <iframe frameborder="0" height="100%" width="100%" src="https://player.vimeo.com/video/272634066?autoplay=0&loop=0&autopause=1&background=1">
                     </iframe>
                   </div>
                 </div>
                 <div class="wrapper">
                     <header class="slideInUp">
-                        <h1 class="title">Adventure Near East Jordan</h1>
+                        <h2 class="title">Adventure Near East Jordan</h2>
                     </header>
                     <section>
                         <p class="slideInUp slideInUp2 subhead">Project Description Area</p>
@@ -92,13 +106,12 @@
                 <div class="bcg">
                   <div class="video-overlay"></div>
                   <div class="video-wrapper">
-                    <iframe frameborder="0" height="100%" width="100%" src="https://player.vimeo.com/video/242854925?loop=1&autopause=0&background=1">
-                    </iframe>
+
                   </div>
                 </div>
                 <div class="wrapper">
                     <header class="slideInUp">
-                        <h1 class="title">TWO</h1>
+                        <h2 class="title">TWO</h2>
                         <p class="slideInUp slideInUp2 subhead">Custom Wordpress Site</p>
                     </header>
                     <section>
@@ -126,7 +139,7 @@
                 </div>
                 <div class="wrapper">
                     <header class="slideInUp">
-                        <h1 class="title">Three</h1>
+                        <h2 class="title">Three</h2>
                         <p class="slideInUp slideInUp2 subhead">Custom Wordpress Site</p>
                     </header>
                     <section>
@@ -154,7 +167,7 @@
                 </div>
                 <div class="wrapper">
                     <header class="slideInUp">
-                        <h1 class="title">Four</h1>
+                        <h2 class="title">Four</h2>
                         <p class="slideInUp slideInUp2 subhead">Custom Wordpress Site</p>
                     </header>
                     <section>
@@ -181,7 +194,7 @@
                 </div>
                 <div class="wrapper">
                     <header class="slideInUp">
-                        <h1 class="title">Five</h1>
+                        <h2 class="title">Five</h2>
                         <p class="slideInUp slideInUp2 subhead">Custom Wordpress Site</p>
                     </header>
                     <section>
@@ -208,7 +221,7 @@
                 </div>
                 <div class="wrapper">
                     <header class="slideInUp">
-                        <h1 class="title">Six</h1>
+                        <h2 class="title">Six</h2>
                         <p class="slideInUp slideInUp2 subhead">Rates Calculator</p>
                     </header>
                     <section>
@@ -234,7 +247,7 @@
                 </div>
                 <div class="wrapper">
                     <header class="slideInUp">
-                        <h1 class="title">Seven</h1>
+                        <h2 class="title">Seven</h2>
                         <p class="slideInUp slideInUp2 subhead">Rates Calculator</p>
                     </header>
                     <section>
@@ -260,7 +273,7 @@
                 </div>
                 <div class="wrapper">
                     <header class="slideInUp">
-                        <h1 class="title">Eight</h1>
+                        <h2 class="title">Eight</h2>
                         <p class="slideInUp slideInUp2 subhead">Rates Calculator</p>
                     </header>
                     <section>
@@ -286,7 +299,7 @@
                 </div>
                 <div class="wrapper">
                     <header class="slideInUp">
-                        <h1 class="title">Nine</h1>
+                        <h2 class="title">Nine</h2>
                         <p class="slideInUp slideInUp2 subhead">Rates Calculator</p>
                     </header>
                     <section>
@@ -312,7 +325,7 @@
                 </div>
                 <div class="wrapper">
                     <header class="slideInUp">
-                        <h1 class="title">Get In Touch</h1>
+                        <h2 class="title">Get In Touch</h2>
                     </header>
                     <section>
                         <div class="slideInUp slideInUp3">
