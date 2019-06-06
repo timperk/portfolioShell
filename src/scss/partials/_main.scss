@@ -236,6 +236,10 @@ h1 {
     }
 }
 
+#intro {
+  will-change: contents;
+}
+
 /* =Navigation */
 nav {
     display: none;
@@ -331,6 +335,7 @@ p {
 .slide {
     color: $lightest;
     position: relative;
+    will-change: transform;
     .wrapper {
         padding-top: 30px;
         text-align: center;

@@ -340,6 +340,9 @@ h1 {
     background: url(../img/bg-5.jpg) no-repeat center center;
     background-size: cover; }
 
+#intro {
+  will-change: contents; }
+
 /* =Navigation */
 nav {
   display: none;
@@ -416,7 +419,8 @@ p {
 
 .slide {
   color: #ffffff;
-  position: relative; }
+  position: relative;
+  will-change: transform; }
   .slide .wrapper {
     padding-top: 30px;
     text-align: center;
